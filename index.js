@@ -15,6 +15,9 @@ app.use('/api/users', userRoutes);
 app.get('/', (req, res) => {
     res.status(200).json({ message: 'Hello! This is from server...' })
 });
+app.get('/html', (req, res) => {
+    res.status(200).json('<h1>Adichu keri vaa.....</h1>')
+});
 
 // Start Server
 app.listen(PORT, () => {
